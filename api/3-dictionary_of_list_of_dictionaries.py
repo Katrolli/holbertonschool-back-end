@@ -40,6 +40,5 @@ if __name__ == "__main__":
     for user in all_users:
         todo_list = get_dict(str(user['id']))
         final_dict[str(user['id'])] = todo_list
-        break
     with open('todo_all_employees.json', 'w', newline='') as file:
         json.dump(final_dict, file)
