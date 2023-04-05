@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """First api request"""
-import requests
 import json
+import requests
 from sys import argv
 
 
