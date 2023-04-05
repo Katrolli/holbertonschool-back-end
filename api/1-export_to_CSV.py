@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """First api request"""
+import csv
 import json
 import requests
 from sys import argv
-import csv
 
 
 if __name__ == "__main__":
