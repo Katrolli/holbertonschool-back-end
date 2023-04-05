@@ -22,11 +22,11 @@ if __name__ == "__main__":
     curr_user = json.loads(user_data)
     curr_todo = json.loads(todo_data)
 
-with open('{}.csv'.format(id), 'w', newline='') as file:
-    for items in curr_todo:
-        if items['userId'] == curr_user['id']:
-            ls = (id, curr_user['username'], str(
-                items['completed']), items['title'])
-            writer = csv.writer(file, delimiter=',',
-                                quotechar='"', quoting=csv.QUOTE_ALL)
-            writer.writerow(ls)
+    with open('{}.csv'.format(id), 'w', newline='') as file:
+        for items in curr_todo:
+            if items['userId'] == curr_user['id']:
+                ls = (id, curr_user['username'], str(
+                    items['completed']), items['title'])
+                writer = csv.writer(file, delimiter=',',
+                                    quotechar='"', quoting=csv.QUOTE_ALL)
+                writer.writerow(ls)
