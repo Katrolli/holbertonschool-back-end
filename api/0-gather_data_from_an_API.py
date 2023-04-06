@@ -34,4 +34,4 @@ if __name__ == "__main__":
         curr_user['name'], len(completed_todos), count))
 
     for completed in completed_todos:
-        print(f"\t{completed['title']}")
+        print(f"\t {completed['title']}")
